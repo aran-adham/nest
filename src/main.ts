@@ -8,7 +8,7 @@ async function bootstrap() {
   app.use(cookieParser())
 
   app.enableCors({
-    origin: "https://nuxt-sand-one.vercel.app", // Ensure this matches exactly with your frontend origin
+    origin: "*", // Ensure this matches exactly with your frontend origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Explicitly allowing methods
     credentials: true, // Allow cookies to be included in cross-origin requests
     allowedHeaders: 'Content-Type, Accept, Authorization', // Ensure necessary headers are allowed
